@@ -1,0 +1,52 @@
+char ch = sc.next().charAt(0);
+	
+INTERVIEW QUESTIONS 
+
+1.What is Abstraction in Java ?
+
+
+DO-WHILE-QUESTIONS
+
+1. Print numbers from 1 to 10 using a do-while loop .
+2. Print all the digits of number using do-while loop .
+3. check if number entered by a user is even or odd using do-while loop .
+4. sum of positive number entered by user and (exit on negative input) using do-while loop . 
+5. Menu driven programs to perform exit operations (addition, substraction,exit) using a do-while loop . 
+
+WHILE-QUESTIONS
+
+1. Print all numbers from 1 and 50 using while loop .
+2. Print multiplication of any numbers using while loop .
+3. Count number of digits in a number using while loop .
+4. Check if number is palindrome using while loop .
+5. Find greatest common divisor (GCD) of two numbers using a while loop . 
+
+
+Task 1: Basic Calculator
+Write a program that defines a basic calculator with four methods:
+- addition() – for adding two numbers
+- subtraction() – for subtracting the second number from the first
+- multiplication() – for multiplying two numbers
+- division() – for dividing the first number by the second number
+Each of these methods should take two parameters: no1 and no2, representing the two numbers.
+Call all these methods from the main() method, passing no1 and no2 as arguments, and print the results of each operation.
+
+
+Task 2: User Input Based Calculator
+
+Write a program that implements a calculator allowing the user to:
+
+1. Select an operation:
+
+	Addition
+	Subtraction
+	Multiplication
+	Division
+	Exit
+
+2. After selecting an operation, prompt the user to input two numbers (no1 and no2).
+3. Perform the selected operation using these two numbers and display the result.
+4. After displaying the result, ask the user if they want to continue or exit the program.
+
+
+5. If the user chooses to continue, ask them to select another operation. If the user chooses to exit, end the program.

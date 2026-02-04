@@ -1,0 +1,6 @@
+ALL Functionalities in Java;
+
+toLowerCase() :- to convert all strings into lowercase;     str_name =str_name.toLowerCase();
+Arrays.copyOf() :- creates new array by copying elements from an existing array . ; int[] arr2 = Arrays.copyOf(arr1, arr1.length);
+toString() :-  used to get a string representation of an object  ; 
+s.equals(rev) :- Comparing original string with reversed string . 
