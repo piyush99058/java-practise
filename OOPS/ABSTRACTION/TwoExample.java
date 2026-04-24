@@ -5,7 +5,8 @@ import java.lang.Math;
 abstract class Shape{
 String color;
 
-    Shape(String color){
+    Shape(String color)
+    {
         this.color=color;
     }
 

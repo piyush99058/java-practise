@@ -8,15 +8,19 @@ public class OddEven {
         int EVEN=0;
         int arr1[] = new int[3];
         System.out.println("Input arrays");
-        for(int i=0;i<arr1.length;i++){
+        for(int i=0;i<arr1.length;i++)
+        {
             arr1[i]=sc.nextInt();
         } 
 
-        for(int i=0;i<arr1.length;i++){
-            if(arr1[i] % 2 == 0){
+        for(int i=0;i<arr1.length;i++)
+        {
+            if(arr1[i] % 2 == 0)
+            {                   //logic
                 EVEN+=1;
             }
-            else{
+            else
+            {
                 ODD=+1;
             }
         }

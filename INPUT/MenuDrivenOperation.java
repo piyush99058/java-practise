@@ -34,7 +34,7 @@ public class MenuDrivenOperation {
             System.out.println("Enter 2nd Number");
             int SecondNum = sc.nextInt();
             System.out.println("Enter choice");
-             ch = sc.nextInt();
+            ch = sc.nextInt();
             switch (ch) {
                 
             case 1:

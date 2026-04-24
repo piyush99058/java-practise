@@ -12,7 +12,8 @@ class Flipkart{
         this.successFul=successFul;
     }
 
-    void printAllDetails(){
+    void printAllDetails()
+    {
         System.out.println("New Product->"+Flipkart_Minutes+" and having rating of"+rating+" and is asuccessful brand->"+successFul);
     }
 }
@@ -48,7 +49,8 @@ class SuperCoin
 
 
 public class HasARelationship {
-    public static void main(String [] args){
+    public static void main(String [] args)
+    {
 
         SuperCoin S1 = new SuperCoin("Supercoins", true,1200000000);
         S1.SuperCoinDetails();

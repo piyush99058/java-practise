@@ -13,13 +13,17 @@ public class VowelsAndConsonents
         System.out.println("Enter a string");
         String name = sc.nextLine();
         String nameLowerCase = name.toLowerCase();
-        for(int i=0;i<nameLowerCase.length();i++){
+        for(int i=0;i<nameLowerCase.length();i++)
+        {
             char ch =   nameLowerCase.charAt(i);      
 
-            if(ch == 'a' || ch =='e' || ch =='i' || ch =='o' || ch =='u'){
+            if(ch == 'a' || ch =='e' || ch =='i' || ch =='o' || ch =='u')
+            {
                 vowelCount++;
             }
-            else{
+
+            else
+            {
                 ConsonentCount++;
             }
         }

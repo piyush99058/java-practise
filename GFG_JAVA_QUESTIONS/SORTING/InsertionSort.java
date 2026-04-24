@@ -37,14 +37,16 @@ public class InsertionSort {
 
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         
     
     int [] arr1 = {9,5,1,4,3};
     insertionSort(arr1);
         System.out.println("Sorted Array: ");
-        for(int num :arr1){
+        for(int num :arr1)
+        {
             System.out.print(num+ " ");
         }
-}
+    }
 }

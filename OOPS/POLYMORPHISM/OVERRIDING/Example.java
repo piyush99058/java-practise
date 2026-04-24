@@ -1,22 +1,35 @@
+/*
+Different classes
+Same method name
+Same parameter
+Usually same return type 
+child provides its own implementation .
+ */
 package OOPS.POLYMORPHISM.OVERRIDING;
 
-class Animal{
-    public void sound(){
+class Animal
+{
+    public void sound()
+    {
         System.out.println("All animal sound");
     }
 }
 
-class Lion extends Animal{
+class Lion extends Animal
+{
     @Override
-    public void sound(){
+    public void sound()
+    {
         System.out.println("Roar");
     }
 }
 
 
-class Tiger extends Animal{
+class Tiger extends Animal
+{
     @Override
-    public void sound(){
+    public void sound()
+    {
         System.out.println("Tiger sound");
     }
 }
@@ -25,12 +38,11 @@ class Tiger extends Animal{
 
 public class Example 
 {
-    public static void main(String[] args){
+    public static void main(String[] args)
+    {
         Animal obj1 = new Tiger();
         Animal obj2 = new Lion();
         obj1.sound();
         obj2.sound();
-
-
     }
 }

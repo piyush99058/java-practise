@@ -1,4 +1,4 @@
-package GFG_JAVA_QUESTIONS.STRINGS.SEARCHING_ALGORITHMS;
+package GFG_JAVA_QUESTIONS.SEARCHING_ALGORITHMS;
 
 public class LinearSearch {
     public static void main(String[]args){

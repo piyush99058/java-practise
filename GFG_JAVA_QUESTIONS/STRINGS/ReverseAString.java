@@ -3,11 +3,13 @@ package GFG_JAVA_QUESTIONS.STRINGS;
 import java.util.Scanner;
 public class ReverseAString {
 
-    public static String reverse(String name){
+    public static String reverse(String name)
+    {
         int n = name.length() - 1;
         String rev ="";
-        for(int i=n;i>=0;i--){
-        rev = rev + name.charAt(i);
+        for(int i=n;i>=0;i--)
+        {
+            rev = rev + name.charAt(i);
         }
         return rev;
     }

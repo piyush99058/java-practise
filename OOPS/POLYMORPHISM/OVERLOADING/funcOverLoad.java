@@ -1,3 +1,9 @@
+//Defining multiple methods with the same name in the same class, but with different parameters.
+/*
+same name,
+same class .
+different parameters.
+ */
 package OOPS.POLYMORPHISM.OVERLOADING;
 
 class Microsoft
@@ -10,7 +16,7 @@ class Microsoft
 
     void ProductInfo(String name,int rating)
     {
-        System.out.println(name+" "+rating);
+        System.out.println(name+" "+rating);    
     }
 
     void ProductInfo(String name)

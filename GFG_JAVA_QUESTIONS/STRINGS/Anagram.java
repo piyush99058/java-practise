@@ -28,7 +28,8 @@ public class Anagram {
 
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         char arr1[] = {'s','i','l','e','n','t'};
         char arr2[] = {'l','i','s','t','e','n','p'};
         boolean result = areAnagrams(arr1,arr2);

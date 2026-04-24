@@ -1,4 +1,4 @@
-package GFG_JAVA_QUESTIONS.STRINGS.SEARCHING_ALGORITHMS;
+package GFG_JAVA_QUESTIONS.SEARCHING_ALGORITHMS;
 
 public class BinarySearch {
 public static int BinarySearch(int arr1[],int start,int end,int k){

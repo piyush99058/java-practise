@@ -1,0 +1,89 @@
+Exception Handling in Java – Short Notes
+What is Exception Handling?
+
+Exception Handling is a mechanism to handle runtime errors so the program does not terminate abnormally.
+
+It helps in:
+
+Maintaining normal flow of program
+Preventing crashes
+Showing meaningful error messages
+Important Terms
+1. Exception
+
+An unwanted event/error that occurs during program execution.
+
+Examples:
+
+Divide by zero
+Array index out of bound
+Null pointer access
+File not found
+2. try Block
+
+Used to write risky code (code that may cause exception).
+
+try {
+   int x = 10 / 0;
+}
+3. catch Block
+
+Used to handle the exception generated in try.
+
+catch(Exception e) {
+   System.out.println(e);
+}
+
+👉 If exception occurs, control goes to catch block.
+
+4. finally Block
+
+Always executes whether exception occurs or not.
+
+Used for:
+
+Closing files
+Closing database connection
+Cleanup code
+finally {
+   System.out.println("Always runs");
+}
+5. throw Keyword
+
+Used to manually create an exception.
+
+throw new ArithmeticException("Error");
+6. throws Keyword
+
+Used in method declaration to indicate exception may occur.
+
+void test() throws IOException
+Types of Exceptions
+A. Checked Exception
+
+Checked at compile time.
+
+Examples:
+
+IOException
+SQLException
+FileNotFoundException
+
+Need handling using try-catch or throws.
+
+B. Unchecked Exception
+
+Occurs at runtime.
+
+Examples:
+
+ArithmeticException
+NullPointerException
+ArrayIndexOutOfBoundsException
+Important Points
+✔ Multiple Catch Blocks
+
+One try can have multiple catch blocks.
+
+catch(ArithmeticException e){}
+catch(ArrayIndexOutOfBoundsException e){}

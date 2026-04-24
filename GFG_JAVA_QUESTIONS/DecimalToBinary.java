@@ -20,10 +20,11 @@ public class DecimalToBinary {
 
 
     } 
-    public static void main(String [] args){
+    public static void main(String [] args)
+    {
 
         System.out.println("Decimal to Binary");
-        DecimalToBinary(9);
+        DecimalToBinary(123);
         System.out.println("\n");
         DecimalToBinary(10);
 

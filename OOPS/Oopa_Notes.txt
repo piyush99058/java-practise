@@ -1,0 +1,291 @@
+1. Class
+
+A class is a blueprint/template for creating objects.
+
+class Car {
+   String color;
+   void drive() {
+      System.out.println("Car is running");
+   }
+}
+
+👉 Car = class
+
+2. Object
+
+An object is an instance of a class.
+
+Car c1 = new Car();
+c1.drive();
+
+👉 c1 = object
+
+3. Constructor
+
+A constructor is a special method used to initialize objects.
+
+Rules:
+Same name as class
+No return type
+Called automatically when object is created
+class Car {
+   Car() {
+      System.out.println("Constructor called");
+   }
+}
+Types:
+Default Constructor
+Parameterized Constructor
+Copy Constructor (common in C++)
+4. this Keyword
+
+Refers to the current object.
+
+class Student {
+   String name;
+   Student(String name){
+      this.name = name;
+   }
+}
+
+Uses:
+
+Differentiate local & instance variable
+Call current class method
+Call constructor (this())
+5. Inheritance
+
+One class acquires properties of another class.
+
+class Animal {
+   void eat(){ }
+}
+
+class Dog extends Animal {
+   void bark(){ }
+}
+
+👉 Dog inherits Animal
+
+Types:
+Single
+Multilevel
+Hierarchical
+Multiple (through interface in Java)
+Hybrid
+6. Polymorphism
+
+One name, many forms
+
+(A) Compile-time Polymorphism
+
+Method Overloading
+
+void add(int a,int b){}
+void add(int a,int b,int c){}
+(B) Runtime Polymorphism
+
+Method Overriding
+
+class Animal{
+   void sound(){ }
+}
+class Dog extends Animal{
+   void sound(){ System.out.println("Bark"); }
+}
+7. Method Overloading
+
+Same method name, different parameters.
+
+void show(int a){}
+void show(String s){}
+
+Rules:
+
+Change number/type/order of arguments
+8. Method Overriding
+
+Child class provides its own implementation of parent method.
+
+class A{
+   void display(){}
+}
+class B extends A{
+   void display(){}
+}
+
+Rules:
+
+Same name
+Same parameters
+IS-A relationship required
+9. Encapsulation
+
+Binding data + methods into one unit (class).
+
+Data hiding using private variables.
+
+class Employee{
+   private int salary;
+
+   public void setSalary(int s){
+      salary = s;
+   }
+   public int getSalary(){
+      return salary;
+   }
+}
+
+👉 Achieved using Getter/Setter
+
+10. Abstraction
+
+Showing essential details, hiding implementation.
+
+Achieved by:
+Abstract class
+Interface
+abstract class Shape{
+   abstract void draw();
+}
+11. Abstract Class
+
+A class declared with abstract.
+
+Can have abstract methods
+Can have normal methods
+Cannot create object
+abstract class Vehicle{
+   abstract void start();
+}
+12. Interface
+
+Used for 100% abstraction (traditionally).
+
+interface Animal{
+   void sound();
+}
+class Dog implements Animal{
+   public void sound(){
+      System.out.println("Bark");
+   }
+}
+Features:
+Multiple inheritance supported
+Methods are public abstract by default
+13. Association
+
+Relationship between two classes.
+
+Example: Student uses Laptop
+
+class Student{
+   Laptop l = new Laptop();
+}
+14. Aggregation
+
+Weak HAS-A relationship.
+
+Example: Department has Teachers
+
+If department deleted, teacher can still exist.
+
+15. Composition
+
+Strong HAS-A relationship.
+
+Example: House has Rooms
+
+If house deleted, rooms also deleted.
+
+16. Access Modifiers
+Modifier	Same Class	Same Package	Subclass	Other Package
+private	Yes	No	No	No
+default	Yes	Yes	No	No
+protected	Yes	Yes	Yes	No
+public	Yes	Yes	Yes	Yes
+17. Static Keyword
+
+Belongs to class, not object.
+
+class Test{
+   static int count=0;
+}
+
+Used with:
+
+Variable
+Method
+Block
+Nested class
+18. final Keyword
+
+Used to restrict changes.
+
+final variable = constant
+final method = cannot override
+final class = cannot inherit
+final int x = 10;
+19. super Keyword
+
+Refers to parent class object.
+
+Uses:
+
+Parent variable
+Parent method
+Parent constructor
+super();
+super.show();
+20. Object Class
+
+Parent of all classes in Java.
+
+Common methods:
+
+toString()
+equals()
+hashCode()
+getClass()
+21. Message Passing
+
+Objects communicate by calling methods.
+
+obj.display();
+22. Dynamic Binding
+
+Method call resolved at runtime.
+
+Animal a = new Dog();
+a.sound();
+23. IS-A vs HAS-A
+IS-A → Inheritance
+Dog IS-A Animal
+HAS-A → Association
+Car HAS-A Engine
+24. Benefits of OOPS
+Code Reusability
+Security
+Easy Maintenance
+Scalability
+Real-world modeling
+Flexibility
+25. Four Pillars of OOPS
+Encapsulation
+Abstraction
+Inheritance
+Polymorphism
+Quick Revision Formula
+Class = Blueprint
+Object = Instance
+Inheritance = Reuse
+Polymorphism = Many forms
+Encapsulation = Data hiding
+Abstraction = Hide complexity
+Interview One-Liners
+Constructor creates object state.
+Overloading = Compile time.
+Overriding = Runtime.
+Interface supports multiple inheritance.
+Encapsulation = Private data + public methods.
+Abstract class = Partial abstraction.

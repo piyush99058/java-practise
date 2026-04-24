@@ -1,29 +1,34 @@
 package OOPS.ENCAPSULATION;
 
-class AmericanExpress{
+class AmericanExpress
+{
     private int balance;
     private String AccountHolderName;
 
-    void SetDetails(String AccHolder, int balance){
+    void SetDetails(String AccHolder, int balance)
+    {
         this.balance = balance;
         this.AccountHolderName = AccHolder;
 
     }
 
-    void withdraw(int amount){
+    void withdraw(int amount)
+    {
         if(amount > 0){
             balance = balance - amount;
             System.out.println("Withdrawn  amount is ->"+amount);
             System.out.println("Final Balance is ->"+balance);
 
         }
-        else{
+        else
+        {
             System.out.println("Invalid amout");
         }
 
     } 
 
-    void deposit(int amount){
+    void deposit(int amount)
+    {
         if(amount > 0){
             balance = balance + amount;
             System.out.println("Deposited amount is ->"+amount);
@@ -51,7 +56,8 @@ class AmericanExpress{
 }
 
 
-public class Banking {
+public class Banking 
+{
     public static void main(String [] args)
     {
 

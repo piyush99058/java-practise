@@ -1,0 +1,12 @@
+lambda expression is a short way to write a function without. It is mainly used to implement functional Interface .
+- Runnable is part of java.lang package.
+- It represents a task that can be executed by a thread.
+- It has a single abstract method: run()
+
+🧠 What is Stream API?
+
+👉 The Stream API in Java 8 is used to:
+
+✅ Process collections (like arrays, lists)
+✅ Write clean, short, functional-style code
+✅ Perform operations like filtering, sorting, mapping

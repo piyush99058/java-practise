@@ -4,7 +4,7 @@ public class QuickSort {
     public static int partition(int arr1[], int low, int high)
     {
         int pivot = arr1[high];
-        int i = (low -1);
+        int i = (low -1);  //-1
         for(int j=low;j<high;j++)
         {
             if(arr1[j] <= pivot)
@@ -33,8 +33,6 @@ public class QuickSort {
             sort(arr1,pi+1,high);
 
         }
-
-
     }
 
     public static void main(String [] args){

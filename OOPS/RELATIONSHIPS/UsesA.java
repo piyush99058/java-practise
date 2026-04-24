@@ -1,3 +1,10 @@
+/*
+HAS-A:
+Object exists as long as parent object exists.
+
+USES-A:
+Object exists only during method execution.
+ */
 package OOPS.RELATIONSHIPS;
 
 class Printer{

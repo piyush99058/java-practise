@@ -18,7 +18,7 @@ public class selectionSort
         for(int i=0;i<n-1;i++)
         {
             int min_idx = i;
-            for(int j = i + 1;j <n;j++ )  //here index of j > that i 
+            for(int j = i + 1;j <n;j++)  //here index of j > that i 
             {
                 if (arr1[min_idx] > arr1[j])  //now checking for values
                 {

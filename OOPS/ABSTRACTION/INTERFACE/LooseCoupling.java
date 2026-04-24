@@ -22,7 +22,8 @@ class InternetBanking implements Payment
     }
 }
 
-class PaymentCheckout{
+class PaymentCheckout
+{
     public void payment(Payment payment){
         payment.pay();
     }

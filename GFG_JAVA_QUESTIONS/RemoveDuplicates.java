@@ -22,14 +22,12 @@ public class RemoveDuplicates {
                  
             }
             
-
-
         }
         return j+1;
     }
 
     public static void main(String[] args) {
-        int arr1[] = {13,26,39,40,41,41,52,65,};
+        int arr1[] = {13,26,39,40,41,41,52,65};
         int k = duplicatesRemoval(arr1);
         System.out.println("Count of unique elements"+k);
 

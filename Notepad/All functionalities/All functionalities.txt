@@ -4,3 +4,29 @@ toLowerCase() :- to convert all strings into lowercase;     str_name =str_name.t
 Arrays.copyOf() :- creates new array by copying elements from an existing array . ; int[] arr2 = Arrays.copyOf(arr1, arr1.length);
 toString() :-  used to get a string representation of an object  ; 
 s.equals(rev) :- Comparing original string with reversed string . 
+
+
+
+
+
+STRINGS :
+
+length()  : Find length  ||  System.out.println(s.length()); 
+charAt(int index)            System.out.println(s.charAt(1));
+substring()					 System.out.println(s.substring(3,7));
+equals()					 System.out.println(a.equals(b));
+equalsIgnoreCase()			 System.out.println("java".equalsIgnoreCase("JAVA"));
+toUpperCase() /   			 System.out.println(s.toUpperCase());
+toLowerCase()				 System.out.println(s.toLowerCase());
+trim()						 System.out.println(s.trim());
+replace()					 System.out.println(s.replace("Java", "Python"));
+contains()					 System.out.println(s.contains("Java"));
+startsWith()     			 System.out.println(s.startsWith("Hello"));
+endsWith()					 System.out.println(s.endsWith("World"));
+indexOf()					 System.out.println(s.indexOf('a'));
+lastIndexOf()				 System.out.println(s.lastIndexOf('a'));
+split()						 String arr[] = s.split(" ");					Break String into Array			
+isEmpty()					 System.out.println(s.isEmpty());				Check Empty String
+valueOf()					 System.out.println(s);							Convert to String
+concat()					 System.out.println(a.concat(b));				Join Strings
+compareTo()					 System.out.println("a".compareTo("b"));			Lexicographic Compare

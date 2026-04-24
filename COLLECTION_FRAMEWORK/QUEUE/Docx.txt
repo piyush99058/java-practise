@@ -1,0 +1,17 @@
+what is the difference between offer and add in queue 
+
+ add(E e)
+- Behavior: Inserts the element into the queue.
+- If success: Returns true.
+- If failure (e.g., queue is full in bounded queues): Throws an exception (IllegalStateException).
+- Use case: When you want strict insertion and are okay with exceptions if the queue is full.
+
+ offer(E e)
+- Behavior: Attempts to insert the element into the queue.
+- If success: Returns true.
+- If failure (e.g., queue is full in bounded queues): Returns false instead of throwing an exception.
+- Use case: Safer in concurrent or bounded queues where you don’t want exceptions disrupting flow
+
+
+
+

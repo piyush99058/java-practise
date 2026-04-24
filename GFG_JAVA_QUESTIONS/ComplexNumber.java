@@ -15,18 +15,18 @@ public class ComplexNumber {
         System.out.println(this.real+"+i"+this.imag);
     }
 
-    public  static ComplexNumber add(ComplexNumber n1, ComplexNumber n2){
+    public  static ComplexNumber add(ComplexNumber n1, ComplexNumber n2)
+    {
         ComplexNumber result = new ComplexNumber(0, 0);
         result.real = n1.real + n2.real;
-        result.imag = n2.imag + n2.imag;
+        result.imag = n1.imag + n2.imag;
         return result;
-
-
     }
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         ComplexNumber c1 =  new ComplexNumber(4,5);
         ComplexNumber c2 =  new ComplexNumber(5,6);
 

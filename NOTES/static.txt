@@ -1,0 +1,56 @@
+🔷 What is a Static Initialization Block?
+
+A static block is a block of code inside a class that:
+
+✅ Runs only once
+✅ Executes when the class is loaded into memory
+✅ Executes before main() method
+
+🧠 Basic Syntax
+class Example {
+    static {
+        // code here
+    }
+}
+
+When does it execute?
+
+Execution order in Java:
+
+Class is loaded
+Static variables initialized
+Static block executed
+main() method runs
+
+Why do we use Static Block?
+✅ 1. Initialize static variables
+class Demo {
+    static int x;
+
+    static {
+        x = 100;
+    }
+}
+✅ 2. Perform complex initialization
+
+If initialization needs logic (not just assignment):
+
+static {
+    if (condition) {
+        value = 10;
+    } else {
+        value = 20;
+    }
+}
+✅ 3. Input reading (like your problem)
+static {
+    Scanner sc = new Scanner(System.in);
+    B = sc.nextInt();
+    H = sc.nextInt();
+}
+✅ 4. Validation + Exception handling
+static {
+    if (B <= 0 || H <= 0) {
+        System.out.println("Invalid input");
+    }
+}
